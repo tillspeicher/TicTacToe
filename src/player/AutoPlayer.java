@@ -7,10 +7,9 @@ import board.Board;
 import board.Kind;
 import game.Game;
 import game.GameUtil;
-import game.Observer;
 import game.Turn;
 
-public class AutoPlayer implements Player, Observer {
+public class AutoPlayer implements Player {
     
     private final Game game;
     private Kind kind;
@@ -88,18 +87,6 @@ public class AutoPlayer implements Player, Observer {
     @Override
     public Kind getKind() {
         return this.kind;
-    }
-
-    @Override
-    public void PieceSetted(Turn t) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void BoardIsFull() {
-        // TODO Auto-generated method stub
-        
     }
 
 }

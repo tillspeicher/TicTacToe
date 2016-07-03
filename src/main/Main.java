@@ -25,9 +25,6 @@ public class Main {
                                                       // der das Spiel über
                                                       // die Kommandozeile
                                                       // kommentiert
-
-        game.addObserver(player1);
-        game.addObserver(player2);
         game.addObserver(commentator);
         game.run();
     }

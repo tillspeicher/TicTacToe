@@ -5,14 +5,13 @@ import java.util.Scanner;
 import board.Board;
 import board.Kind;
 import game.Game;
-import game.Observer;
 import game.Turn;
 
 /**
  * Diese Klasse implementiert einen Spieler, der über die Kommandozeile
  * gesteuert werden kann.
  */
-public class KeyBoardPlayer implements Observer, Player {
+public class KeyBoardPlayer implements Player {
 
     private final Game game;
     private final Board board;
@@ -43,15 +42,5 @@ public class KeyBoardPlayer implements Observer, Player {
     @Override
     public Kind getKind() {
         return this.kind;
-    }
-
-    @Override
-    public void BoardIsFull() {
-        // TODO Auto-generated method stub
-    }
-
-    @Override
-    public void PieceSetted(Turn t) {
-        // TODO Auto-generated method stub
     }
 }
