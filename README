@@ -1,0 +1,5 @@
+A small TicTacToe game for educational purposes.
+
+The goal is to write a simple AI that plays against a human or another AI.
+
+The game is based on https://github.com/TimoPGros/TicTacToe.
