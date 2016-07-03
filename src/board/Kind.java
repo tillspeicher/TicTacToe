@@ -10,5 +10,18 @@ public enum Kind {
             return "o";
         return " ";
     }
+    
+    public Kind negate() {
+        switch (this) {
+        case O:
+            return X;
+        case X:
+            return O;
+        case empty:
+            return empty;
+        default:
+            return null;
+        }
+    }
 
 }
